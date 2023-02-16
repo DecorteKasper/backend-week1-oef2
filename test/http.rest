@@ -1,0 +1,41 @@
+@host=localhost:5000
+
+
+GET http://{{host}}/brands HTTP/1.1
+
+
+###
+GET http://{{host}}/brands/Italy HTTP/1.1
+
+
+###
+GET http://{{host}}/brand/2 HTTP/1.1
+
+
+###
+POST http://{{host}}/brand HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "VW",
+    "country": "France",
+    "Logo": "logo.png"
+}
+
+
+###
+GET http://{{host}}/carModels HTTP/1.1
+
+
+
+###
+GET http://{{host}}/carModels/Audi HTTP/1.1
+
+
+
+###
+GET http://{{host}}/carModels/1 HTTP/1.1
+
+
+###
+GET http://{{host}}/carModels/Germany HTTP/1.1
